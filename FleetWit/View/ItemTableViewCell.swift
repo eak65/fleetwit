@@ -23,7 +23,7 @@ class ItemTableViewCell: UITableViewCell {
         self.authorLabel.adjustsFontSizeToFitWidth = true;
         self.titleLabel.adjustsFontSizeToFitWidth = true;
         self.titleLabel.minimumScaleFactor = 10/UIFont.labelFontSize
-
+    
     }
     
 
