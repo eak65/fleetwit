@@ -28,7 +28,7 @@ class Network
              return
             }
             
-             if(httpResponse.statusCode != 200)
+             if(error != nil)
              {
                 failure(httpResponse, error)
              }
@@ -36,7 +36,7 @@ class Network
              {
                 let decoder = JSONDecoder()
                 let generic = try! decoder.decode(GenericDataType.self, from: data)
-                let items = generic.data.children!.map{$0.data as! Item}
+                let items = generic.listing!.children!.map{$0.item as! Item}
                 OperationQueue.main.addOperation{
                     success(items)
                 }

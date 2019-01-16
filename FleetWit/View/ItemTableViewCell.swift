@@ -32,7 +32,7 @@ class ItemTableViewCell: UITableViewCell {
         self.commentsLabel.text = "\(model.num_comments ?? 0) comments"
         self.leftImageView.loadImageUsingUrlString(urlString: model.thumbnail!)
         
-        let created = Date(timeIntervalSince1970: model.created!)
+        let created = Date(timeIntervalSince1970: model.created_utc!)
         let difference = Date().hours(from: created)
         self.timeLabel.text = "\(difference) hours ago"
     }

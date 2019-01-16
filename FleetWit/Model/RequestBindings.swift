@@ -22,7 +22,7 @@ protocol Generic : Decodable
     var before: String? {get}
     var title: String? {get}
     var author: String? {get}
-    var created: Double? {get}
+    var created_utc: Double? {get}
     var thumbnail: String? {get}
     var num_comments: Int? {get}
 }
@@ -34,22 +34,22 @@ enum GenericKeyStruct: String, CodingKey {
 struct GenericDataType: Decodable {
 
     var kind: ItemType
-    var data: Generic
-    
+    var listing: Listing?
+    var item: Item?
     public init(from decoder: Decoder) throws {
         let container     = try decoder.container(keyedBy: GenericKeyStruct.self)
         kind = try container.decode(ItemType.self, forKey: .kind)
         switch self.kind {
             case .Listing:
-                data =  try container.decode(Listing.self, forKey: .data)
+                listing =  try container.decode(Listing.self, forKey: .data)
 
             case .t3:
-                data =  try container.decode(Item.self, forKey: .data)
+                item =  try container.decode(Item.self, forKey: .data)
             }
     }
 }
 
-struct Listing : Generic, Decodable
+struct Listing : Decodable
 {
     var modhash: String?
     
@@ -60,17 +60,5 @@ struct Listing : Generic, Decodable
     var children: [GenericDataType]?
     
     var before: String?
-    
-    var title: String?
-    
-    var author: String?
-    
-    var created: Double?
-    
-    var thumbnail: String?
-    
-    var num_comments: Int?
-    
-
 }
 

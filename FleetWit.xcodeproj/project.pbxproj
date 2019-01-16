@@ -73,6 +73,7 @@
 		2947B4D521EEEA4400B337F2 /* FleetWit */ = {
 			isa = PBXGroup;
 			children = (
+				2947B4FA21EF3C8600B337F2 /* Helper */,
 				2947B4EF21EEF5CB00B337F2 /* Model */,
 				2947B4EE21EEF58100B337F2 /* View */,
 				2947B4ED21EEF56200B337F2 /* Controller */,
@@ -82,8 +83,6 @@
 				2947B4DD21EEEA4900B337F2 /* Assets.xcassets */,
 				2947B4DF21EEEA4900B337F2 /* LaunchScreen.storyboard */,
 				2947B4E221EEEA4900B337F2 /* Info.plist */,
-				2947B4F621EF20D500B337F2 /* CustomImageView.swift */,
-				2947B4F821EF331900B337F2 /* Date.swift */,
 			);
 			path = FleetWit;
 			sourceTree = "<group>";
@@ -107,6 +106,7 @@
 		2947B4EE21EEF58100B337F2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2947B4F621EF20D500B337F2 /* CustomImageView.swift */,
 				2947B4EA21EEEFCE00B337F2 /* ItemTableViewCell.swift */,
 			);
 			path = View;
@@ -119,6 +119,14 @@
 				2947B4F421EEFCB100B337F2 /* RequestBindings.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2947B4FA21EF3C8600B337F2 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2947B4F821EF331900B337F2 /* Date.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		46193B1F069AA89AE062E363 /* Frameworks */ = {
