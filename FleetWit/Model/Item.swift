@@ -23,7 +23,7 @@ struct Item: Generic, Decodable {
     
     var author: String?
     
-    var created: Int?
+    var created: Double?
     
     var thumbnail: String?
     

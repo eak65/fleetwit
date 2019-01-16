@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FleetWit/Controller/TopTableViewController.swift"
-            timestampString = "569321954.7031161"
+            timestampString = "569325095.361058"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FleetWit/Controller/TopTableViewController.swift"
-            timestampString = "569321954.707002"
+            timestampString = "569325095.364988"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -160,6 +160,22 @@
             startingLineNumber = "31"
             endingLineNumber = "31"
             landmarkName = "loadImageUsingUrlString(urlString:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FleetWit/View/ItemTableViewCell.swift"
+            timestampString = "569325095.365877"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "configure(model:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

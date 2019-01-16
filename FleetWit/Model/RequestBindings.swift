@@ -22,7 +22,7 @@ protocol Generic : Decodable
     var before: String? {get}
     var title: String? {get}
     var author: String? {get}
-    var created: Int? {get}
+    var created: Double? {get}
     var thumbnail: String? {get}
     var num_comments: Int? {get}
 }
@@ -65,7 +65,7 @@ struct Listing : Generic, Decodable
     
     var author: String?
     
-    var created: Int?
+    var created: Double?
     
     var thumbnail: String?
     
