@@ -7,6 +7,7 @@
 //
 import UIKit
 import Foundation
+import SVProgressHUD
 let imageCache = NSCache<AnyObject, AnyObject>()
 class CustomImageView: UIImageView
 {
@@ -29,12 +30,16 @@ class CustomImageView: UIImageView
                 return
             }
             OperationQueue.main.addOperation {
-                 let imageToCache = UIImage(data: data!)
+                 guard let imageToCache = UIImage(data: data!)
+                    else{
+                        SVProgressHUD.showError(withStatus: "Failed to display because data source is a video.")
+                        return;
+                }
                  if self.imageUrlString == urlString
                  {
                         self.image = imageToCache
                  }
-                 imageCache.setObject(imageToCache!, forKey: urlString as AnyObject)
+                imageCache.setObject(imageToCache, forKey: urlString as AnyObject)
             }
         }).resume()
     }
