@@ -8,22 +8,13 @@
 
 import UIKit
 
-struct Item: Generic, Decodable {
-    var modhash: String?
-    
-    var dist: Int?
-    
-    var after: String?
-    
-    var children: [GenericDataType]?
-    
-    var before: String?
-    
+struct Item: Decodable {
+
     var title: String?
     
     var author: String?
     
-    var created: Int?
+    var created_utc: Double?
     
     var thumbnail: String?
     

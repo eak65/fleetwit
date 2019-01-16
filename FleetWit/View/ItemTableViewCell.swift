@@ -25,6 +25,17 @@ class ItemTableViewCell: UITableViewCell {
         self.titleLabel.minimumScaleFactor = 10/UIFont.labelFontSize
     
     }
+    func configure(model :Item)
+    {
+        self.titleLabel.text = model.title
+        self.authorLabel.text = model.author
+        self.commentsLabel.text = "\(model.num_comments ?? 0) comments"
+        self.leftImageView.loadImageUsingUrlString(urlString: model.thumbnail!)
+        
+        let created = Date(timeIntervalSince1970: model.created_utc!)
+        let difference = Date().hours(from: created)
+        self.timeLabel.text = "\(difference) hours ago"
+    }
     
 
     override func setSelected(_ selected: Bool, animated: Bool) {

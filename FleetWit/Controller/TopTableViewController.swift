@@ -47,10 +47,7 @@ class TopTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? ItemTableViewCell else {fatalError("Could not dequeue ITEMTABLEVIEWCELL")}
         
-        cell.titleLabel.text = items[indexPath.row].title
-        cell.authorLabel.text = items[indexPath.row].author
-        cell.commentsLabel.text = "\(items[indexPath.row].num_comments ?? 0)"
-        cell.leftImageView!.loadImageUsingUrlString(urlString: items[indexPath.row].thumbnail!)
+        cell.configure(model: items[indexPath.row])
         return cell
     }
     
