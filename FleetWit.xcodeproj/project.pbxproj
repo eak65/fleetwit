@@ -18,6 +18,8 @@
 		2947B4F521EEFCB100B337F2 /* RequestBindings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2947B4F421EEFCB100B337F2 /* RequestBindings.swift */; };
 		2947B4F721EF20D500B337F2 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2947B4F621EF20D500B337F2 /* CustomImageView.swift */; };
 		2947B4F921EF331900B337F2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2947B4F821EF331900B337F2 /* Date.swift */; };
+		2947B4FC21EFE04400B337F2 /* StoryboardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2947B4FB21EFE04400B337F2 /* StoryboardFactory.swift */; };
+		2947B4FE21EFE08700B337F2 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2947B4FD21EFE08700B337F2 /* DetailedViewController.swift */; };
 		C2F1793B17CCEBF2E7945300 /* Pods_FleetWit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508D70E2A148822F4873480D /* Pods_FleetWit.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		2947B4F421EEFCB100B337F2 /* RequestBindings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBindings.swift; sourceTree = "<group>"; };
 		2947B4F621EF20D500B337F2 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		2947B4F821EF331900B337F2 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		2947B4FB21EFE04400B337F2 /* StoryboardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardFactory.swift; sourceTree = "<group>"; };
+		2947B4FD21EFE08700B337F2 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
 		508D70E2A148822F4873480D /* Pods_FleetWit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FleetWit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C99DE212DBE6041EBE38C4 /* Pods-FleetWit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleetWit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FleetWit/Pods-FleetWit.debug.xcconfig"; sourceTree = "<group>"; };
 		FF9E38FB8A94FC61F4A91DEB /* Pods-FleetWit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FleetWit.release.xcconfig"; path = "Pods/Target Support Files/Pods-FleetWit/Pods-FleetWit.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				2947B4E821EEECC700B337F2 /* TopTableViewController.swift */,
+				2947B4FD21EFE08700B337F2 /* DetailedViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 		2947B4FA21EF3C8600B337F2 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				2947B4FB21EFE04400B337F2 /* StoryboardFactory.swift */,
 				2947B4F821EF331900B337F2 /* Date.swift */,
 			);
 			path = Helper;
@@ -276,6 +282,8 @@
 			files = (
 				2947B4F321EEF7CF00B337F2 /* Network.swift in Sources */,
 				2947B4F121EEF5F400B337F2 /* Item.swift in Sources */,
+				2947B4FE21EFE08700B337F2 /* DetailedViewController.swift in Sources */,
+				2947B4FC21EFE04400B337F2 /* StoryboardFactory.swift in Sources */,
 				2947B4F721EF20D500B337F2 /* CustomImageView.swift in Sources */,
 				2947B4F921EF331900B337F2 /* Date.swift in Sources */,
 				2947B4E921EEECC700B337F2 /* TopTableViewController.swift in Sources */,

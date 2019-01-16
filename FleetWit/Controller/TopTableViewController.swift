@@ -8,7 +8,7 @@
 
 import UIKit
 import SVProgressHUD
-class TopTableViewController: UITableViewController {
+class TopTableViewController: UITableViewController, ItemTableViewCellProtocol {
 
     let identifier = "ITEMTABLEVIEWCELLIDENTIFIER"
     var items = [Item]()
@@ -48,9 +48,13 @@ class TopTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? ItemTableViewCell else {fatalError("Could not dequeue ITEMTABLEVIEWCELL")}
         
         cell.configure(model: items[indexPath.row])
+        cell.delegate = self
         return cell
     }
     
+    func didSelect(item: Item) {
+        self.navigationController?.pushViewController(StoryboardFactory().createDetailedViewController(imageUrlString: item.url), animated:true)
+    }
 
     /*
     // Override to support conditional editing of the table view.

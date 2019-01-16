@@ -10,15 +10,10 @@ import UIKit
 
 struct Item: Decodable {
 
-    var title: String?
-    
-    var author: String?
-    
-    var created_utc: Double?
-    
-    var thumbnail: String?
-    
-    var num_comments: Int?
-    
-
+    var title: String
+    var author: String
+    var created_utc: Double
+    var thumbnail: String
+    var num_comments: Int
+    var url : String
 }
