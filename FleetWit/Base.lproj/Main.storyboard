@@ -25,7 +25,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="114.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1s5-cN-gMX">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1s5-cN-gMX" customClass="CustomImageView" customModule="FleetWit" customModuleProvider="target">
                                             <rect key="frame" x="16" y="11" width="136" height="93"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="136" id="xuD-XJ-gJQ"/>

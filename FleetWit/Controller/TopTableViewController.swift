@@ -50,7 +50,7 @@ class TopTableViewController: UITableViewController {
         cell.titleLabel.text = items[indexPath.row].title
         cell.authorLabel.text = items[indexPath.row].author
         cell.commentsLabel.text = "\(items[indexPath.row].num_comments ?? 0)"
-        cell.imageView!.loadImageUsingUrlString(urlString: items[indexPath.row].thumbnail!)
+        cell.leftImageView!.loadImageUsingUrlString(urlString: items[indexPath.row].thumbnail!)
         return cell
     }
     

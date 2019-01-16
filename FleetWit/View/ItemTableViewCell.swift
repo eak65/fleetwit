@@ -10,7 +10,7 @@ import UIKit
 
 class ItemTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var leftImageView: UIImageView!
+    @IBOutlet weak var leftImageView: CustomImageView!
     @IBOutlet weak var commentsLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var authorLabel: UILabel!
