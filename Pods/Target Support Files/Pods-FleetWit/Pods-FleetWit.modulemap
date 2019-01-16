@@ -1,0 +1,6 @@
+framework module Pods_FleetWit {
+  umbrella header "Pods-FleetWit-umbrella.h"
+
+  export *
+  module * { export * }
+}
