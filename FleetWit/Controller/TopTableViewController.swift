@@ -15,7 +15,7 @@ class TopTableViewController: UITableViewController, ItemTableViewCellProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "Top Reddit Post"
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         SVProgressHUD.show()
