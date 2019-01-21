@@ -12,12 +12,12 @@ class Network
 {
     let urlSession = URLSession(configuration: .default)
 
-    func getTop(urlString: String,body: Data?, success:@escaping ([Item]) -> (), failure:@escaping (HTTPURLResponse, Error?) -> ())
+    func getTop(success:@escaping ([Item]) -> (), failure:@escaping (HTTPURLResponse, Error?) -> ())
     {
+        var urlString = "https://www.reddit.com/top/.json?count=100";
         let url = URL(string: urlString)
         var request = URLRequest(url: url!)
         request.httpMethod = "Get"
-        request.httpBody = body
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Content-Type")
         request.setValue("application/json; charset=utf-8", forHTTPHeaderField: "Accept")
 

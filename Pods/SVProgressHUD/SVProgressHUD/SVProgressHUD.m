@@ -1405,14 +1405,18 @@ API_AVAILABLE(ios(10.0))
 }
 
 #if TARGET_OS_IOS && __IPHONE_OS_VERSION_MAX_ALLOWED >= 100000
-- (UINotificationFeedbackGenerator *)hapticGenerator {
+    - (UINotificationFeedbackGenerator *)hapticGenerator  API_AVAILABLE(ios(10.0)){
 	// Only return if haptics are enabled
 	if(!self.hapticsEnabled) {
 		return nil;
 	}
 	
 	if(!_hapticGenerator) {
-		_hapticGenerator = [[UINotificationFeedbackGenerator alloc] init];
+        if (@available(iOS 10.0, *)) {
+            _hapticGenerator = [[UINotificationFeedbackGenerator alloc] init];
+        } else {
+            // Fallback on earlier versions
+        }
 	}
 	return _hapticGenerator;
 }

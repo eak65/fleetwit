@@ -132,18 +132,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wJb-sg-IfA" customClass="CustomImageView" customModule="FleetWit" customModuleProvider="target">
-                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <rect key="frame" x="40" y="139" width="296" height="358"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="wJb-sg-IfA" secondAttribute="height" multiplier="343:627" id="o25-Ck-Icb"/>
+                                    <constraint firstAttribute="width" secondItem="wJb-sg-IfA" secondAttribute="height" multiplier="247:283" constant="-16.459363957597191" id="JAO-hM-TDe"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="wJb-sg-IfA" firstAttribute="leading" secondItem="ayG-IM-9zr" secondAttribute="leading" constant="16" id="1rm-sm-n6f"/>
-                            <constraint firstItem="wJb-sg-IfA" firstAttribute="top" secondItem="ayG-IM-9zr" secondAttribute="top" id="Jgz-fm-bdP"/>
-                            <constraint firstItem="ayG-IM-9zr" firstAttribute="bottom" secondItem="wJb-sg-IfA" secondAttribute="bottom" constant="20" id="vZV-GV-zTa"/>
-                            <constraint firstItem="ayG-IM-9zr" firstAttribute="trailing" secondItem="wJb-sg-IfA" secondAttribute="trailing" constant="16" id="yQ6-9y-Txa"/>
+                            <constraint firstItem="wJb-sg-IfA" firstAttribute="top" secondItem="ayG-IM-9zr" secondAttribute="top" constant="119" id="kQh-w6-PUK"/>
+                            <constraint firstItem="wJb-sg-IfA" firstAttribute="centerX" secondItem="bS0-xU-fH4" secondAttribute="centerX" id="kvY-t5-qfs"/>
+                            <constraint firstItem="wJb-sg-IfA" firstAttribute="centerY" secondItem="bS0-xU-fH4" secondAttribute="centerY" constant="-15.5" id="wbA-jR-72B"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ayG-IM-9zr"/>
                     </view>

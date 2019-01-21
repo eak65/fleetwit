@@ -19,7 +19,7 @@ class TopTableViewController: UITableViewController, ItemTableViewCellProtocol {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         SVProgressHUD.show()
-        Network().getTop(urlString: "https://www.reddit.com/top/.json?count=50", body: nil, success: { (items) in
+        Network().getTop(success: { (items) in
             SVProgressHUD.dismiss()
             self.items = items
             self.tableView.reloadData()
